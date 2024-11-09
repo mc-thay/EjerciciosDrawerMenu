@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_primalidad" android:title="Primalidad" />
+    <item android:id="@+id/menu_edades_relativas" android:title="Edades Relativas" />
+    <item android:id="@+id/menu_area_triangulo" android:title="Área del Triángulo" />
+    <item android:id="@+id/menu_tiempo_construccion" android:title="Tiempo de Construcción" />
+    <item android:id="@+id/menu_factores_compuestos" android:title="Factores y Compuestos" />
+    <item android:id="@+id/menu_comprobacion_compuestos" android:title="Comprobación de Compuestos" />
+</menu>

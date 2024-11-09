@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".TiempoConstruccionFragment">
+
+    <!-- Título del Fragmento -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Tiempo de Construcción"
+        android:textSize="22sp"
+
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- EditText para ingresar el número de trabajadores -->
+    <EditText
+        android:id="@+id/et_numero_trabajadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Número de Trabajadores"
+        android:inputType="number"
+
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Campo para ingresar el número de trabajadores"/>
+
+    <!-- EditText para ingresar los días iniciales -->
+    <EditText
+        android:id="@+id/et_dias_iniciales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="26dp"
+        android:hint="Días Iniciales"
+        android:inputType="number"
+
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Campo para ingresar los días iniciales de construcción"/>
+
+    <!-- Botón para calcular el tiempo de construcción -->
+    <Button
+        android:id="@+id/btn_calcular_tiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calcular Tiempo"
+        android:textColor="@android:color/white"
+
+        android:textSize="16sp"
+        android:padding="14dp"
+        android:layout_gravity="center"/>
+
+    <!-- TextView para mostrar el resultado del tiempo calculado -->
+    <TextView
+        android:id="@+id/tv_resultado_tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"/>
+
+</FrameLayout>

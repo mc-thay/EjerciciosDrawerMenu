@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FactoresCompuestosFragment">
+
+    <!-- Título del Fragmento -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Factores y Composición de un Número"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
+
+    <!-- EditText para ingresar un número -->
+    <EditText
+        android:id="@+id/et_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa un número"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <!-- Botón para calcular los factores -->
+    <Button
+        android:id="@+id/btn_calcular_factores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Factores"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <!-- TextView para mostrar la lista de factores -->
+    <TextView
+        android:id="@+id/tv_factores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"/>
+
+    <!-- TextView para mostrar si es número compuesto o no -->
+    <TextView
+        android:id="@+id/tv_composicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+
+</FrameLayout>

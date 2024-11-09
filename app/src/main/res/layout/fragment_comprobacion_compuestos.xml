@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComprobacionCompuestosFragment">
+
+    <!-- Título del Fragmento -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comprobación de Compuestos"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:padding="16dp"/>
+
+    <!-- EditText para que el usuario ingrese el número -->
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa un número"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <!-- Botón para ejecutar la comprobación -->
+    <Button
+        android:id="@+id/btn_check_composed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar Número Compuesto"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <!-- TextView para mostrar el resultado -->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"/>
+
+</FrameLayout>
