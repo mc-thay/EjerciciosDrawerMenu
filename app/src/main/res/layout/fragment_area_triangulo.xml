@@ -1,48 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_vertical"
     tools:context=".AreaTrianguloFragment">
 
-    <LinearLayout
+    <!-- Campo de texto para la base -->
+    <EditText
+        android:id="@+id/et_base"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="wrap_content"
+        android:hint="Base del triángulo"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000" /> <!-- Color negro para el texto -->
 
-        <!-- Campo de texto para la base -->
+    <!-- Campo de texto para la altura -->
+    <EditText
+        android:id="@+id/et_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura del triángulo"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000" /> <!-- Color negro para el texto -->
 
-        <!-- Campo de texto para la altura -->
-        <EditText
-            android:id="@+id/et_base"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Base del triángulo"
-            android:inputType="numberDecimal" />
+    <!-- Botón para calcular el área -->
+    <Button
+        android:id="@+id/btn_calcular_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Área"
+        android:background="@color/md_theme_primary"
+        android:textColor="#FFFFFF"
+    android:layout_marginBottom="24dp"/>
 
-        <EditText
-            android:id="@+id/et_altura"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Altura del triángulo"
-            android:inputType="numberDecimal"/>
+    <!-- Texto donde se mostrará el resultado -->
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Área: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="#000000" /> <!-- Color negro para el texto -->
 
-        <!-- Botón para calcular el área -->
-        <Button
-            android:id="@+id/btn_calcular_area"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Calcular Área"/>
-
-        <!-- Texto donde se mostrará el resultado -->
-        <TextView
-            android:id="@+id/tv_resultado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Área: "
-            android:textSize="18sp"
-            android:paddingTop="16dp"/>
-
-    </LinearLayout>
-</FrameLayout>
+</LinearLayout>

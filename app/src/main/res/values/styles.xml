@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Base.Theme.EjerciciosDrawerMenu." parent="Theme.Material3.Light.NoActionBar"> <!-- Cambiar aquí -->
+        <item name="android:colorBackground">@android:color/white</item> <!-- Fondo blanco para fragmentos -->
+        <item name="android:textColor">@android:color/black</item> <!-- Texto negro -->
+
+    </style>
+    <style name="AppTheme" parent="Base.Theme.EjerciciosDrawerMenu" />
+</resources>

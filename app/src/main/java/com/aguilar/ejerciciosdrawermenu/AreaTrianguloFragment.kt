@@ -22,6 +22,7 @@ class AreaTrianguloFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflamos el layout del fragmento
+        context?.theme?.applyStyle(R.style.Theme_EjerciciosDrawerMenu, true)
         val rootView = inflater.inflate(R.layout.fragment_area_triangulo, container, false)
 
         // Inicializamos las vistas

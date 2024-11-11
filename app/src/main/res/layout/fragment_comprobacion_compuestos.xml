@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
     tools:context=".ComprobacionCompuestosFragment">
 
     <!-- Título del Fragmento -->
@@ -10,9 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Comprobación de Compuestos"
-        android:layout_gravity="center"
         android:textSize="20sp"
-        android:padding="16dp"/>
+        android:textAlignment="center"
+        android:paddingBottom="16dp"
+        android:textColor="#000000"/> <!-- Color negro para el texto -->
 
     <!-- EditText para que el usuario ingrese el número -->
     <EditText
@@ -21,10 +25,9 @@
         android:layout_height="wrap_content"
         android:hint="Ingresa un número"
         android:inputType="number"
-        android:layout_marginTop="16dp"
         android:padding="10dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"/> <!-- Color negro para el texto -->
 
     <!-- Botón para ejecutar la comprobación -->
     <Button
@@ -32,9 +35,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Verificar Número Compuesto"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"/>
+        android:background="@color/md_theme_primary"
+        android:textColor="#FFFFFF"
+    android:layout_marginBottom="24dp"/>
 
     <!-- TextView para mostrar el resultado -->
     <TextView
@@ -42,8 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:layout_gravity="center"
-        android:layout_marginTop="24dp"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#000000"/> <!-- Color negro para el texto -->
 
-</FrameLayout>
+</LinearLayout>
